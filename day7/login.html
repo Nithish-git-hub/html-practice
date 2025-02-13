@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Forms</title>
+</head>
+<body>
+    <form method="get" action="./loginsuccess.html" autocomplete="off"> 
+        <center>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" pattern="[a-z]+" placeholder="Enter your username" title="Enter a-z format" required><br>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password"  placeholder="Enter your password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^]).{8,16}" title="Enter atleast 8 characters which includes a-zA-Z0-9@#$%^ format" required><br>
+            <input type="submit" value="login"><br>
+            <a href="./forgot.html" >forgot</a>&nbsp;&nbsp;&nbsp;
+            <a href="./register.html" >register</a></center>
+    </form>
+    
+</body>
+</html>

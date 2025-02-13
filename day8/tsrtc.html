@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>TGRTC ONLINE SEVICE</title>
+</head>
+<body>
+    <center>
+        <img src="./tgrtc i.jpeg" alt="TGRTC" width="60%">
+    </center>
+    
+    <fieldset>
+        <legend>Applicant Details</legend>
+        <form method="get" action="./success.html">
+           <p><label for="name"><b>Name*:</b></label>
+           <input type="text" id="name" name="name" pattern="[a-zA-Z]+" minlength="4" maxlength="16" title="Enter your name" required>&nbsp;&nbsp;&nbsp;&nbsp;
+           <label for="fname"><b>Father's/Guardian Name*:</b></label>
+           <input type="text" id="fname" name="faname" pattern="[a-zA-Z]+" title="Enter your name" required></p>
+           <p><label for="date"><b>Date of Birth*:</b></label>
+           <input type="date" id="date" name="datemonth" pattern="[0-9]+" title="Enter your date of birth" required>&nbsp;&nbsp;&nbsp;&nbsp;
+           <label for="gender"><b>Gender*:</b></label>
+           <input type="radio" id="gender" name="gender" gender="Male" required>Male
+           <input type="radio" id="gender" name="gender" gender="Female" required>Female<br><small>(dd/mm/yyyy)</small></p>
+           <p><label for="aname"><b>Age as on:</b></label>
+           <input type="text" id="aname" name="age" pattern="[0-9]+" minlength="2" maxlength="2" title="Enter your age as on" required>&nbsp;&nbsp;&nbsp;&nbsp;
+           <label for="bname"><b>Aadhar No:</b></label>
+           <input type="text" id="bname" name="aadharno" pattern="[0-9]+" minlength="12" maxlength="12" title="Enter your aadhar number" required></p>
+           <p><label for="cname"><b>WhatsApp No*:</b></label>
+           <input type="tel" id="cname" name="whatsApp" pattern="\+91[6789][0-9]{9}" title="Enter your number" required>&nbsp;&nbsp;&nbsp;&nbsp;
+           <label for="email"><b>E-mail:*</b></label>
+           <input type="email" id="email" name="Email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" title="Enter your email" required></p>
+           <label for="photo"><b>Photo*:</b></label>
+           <input type="file" id="photo" name="photo"  title="upload photo" required>
+        
+    </fieldset>
+    <fieldset>
+        <legend>Residential Address Details</legend>
+            <p><label for="address"><b>Application Address*:</b></label>
+            <textarea id="address" name="address" pattern="[a-zA-Z0-9]+" minlength="4" maxlength="16" title="Enter your address" required></textarea>&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="district"><b>District*:</b></label>
+            <select id="district" name="district"  title="select district" required><option value="Hyderabad">Hyderabad</option><option value="sircilla">sircilla</option></select></p>
+            <p><label for="mandal"><b>Mandal*:</b></label>
+            <select id="mandal" name="mandal"  title="select mandal" required><option value="Hyderabad">Hyderabad</option><option value="sircilla">sircilla</option></select>&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="village"><b>Village*:</b></label>
+            <select id="village" name="village"  title="select village" required><option value="Hyderabad">Hyderabad</option><option value="sircilla">sircilla</option></select></p>
+            <label for="namep"><b>Pin code*:</b></label>
+           <input type="tel" id="namep" name="pincode" pattern="\5[0-9]+" minlength="6" maxlength="6" title="Enter pincode" required>
+    </fieldset>
+    <fieldset>
+        <legend>Pass Type Details</legend>
+        <label for="city"><b>City*:</b></label>
+            <select id="city" name="city"  title="select city" required><option value="Hyderabad">Hyderabad</option><option value="sircilla">sircilla</option></select><br>
+            <label for="pass"><b>Pass Type*:</b></label>
+            <select id="pass" name="passtype"  title="select passtype" required><option value="select" selected disabled>---Select---</option><option value="ordinary">Ordinary</option><option value="metro">Metro</option></select>
+    </fieldset>
+    <fieldset>
+        <legend>Mode of Payment Collection</legend>
+        <label for="mode0ne"><b>Payment Mode*:</b></label>
+        <select id="modeone" name="paymentmode"  title="select paymentmode" required><option value="b" selected disabled>Select payment mode</option><option value="upi">UPI</option><option value="credit">Credit/Debit</option></select><br>
+        <label for="modetwo"><b>Pass Delivery Mode*:</b></label>
+        <select id="modetwo" name="passmode"  title="select passmode" required ><option value="q" selected disabled>select pass delivery mode</option><option value="center">TGRTC office</option></select><br>
+        <label for="modethree"><b>Center at which you want to collect pass*:</b></label>
+        <select id="modethree" name="pass"  title="select center" required><option value="c" selected disabled>---Select---</option><option value="center">TGRTC office Hyderabad</option><option value="a">TGRTC office sircilla</option></select>
+    </fieldset>
+       <center>
+        <img src="./logo.jpeg" alt="captcha" width="20%"><br>
+        <input type="text" pattern="aPbd8X" title="enter captcha"><br><br>
+        <input type="submit" >
+       </center>
+    </form>
+</body>
+</html>
